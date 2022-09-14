@@ -25,7 +25,6 @@ public class User {
 	private String contactNo;
 	public User() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public User(int userId, String firstName,String lastName, String email, String password, String contactNo) {
 		super();

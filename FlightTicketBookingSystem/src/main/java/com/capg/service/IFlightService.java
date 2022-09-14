@@ -2,8 +2,6 @@ package com.capg.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
 import com.capg.entities.Flight;
 
 public interface IFlightService {

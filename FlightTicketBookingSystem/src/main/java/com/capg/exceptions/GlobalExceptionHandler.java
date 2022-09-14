@@ -42,27 +42,27 @@ public class GlobalExceptionHandler {
 	private String message5;
 	@ExceptionHandler(UserAlreadyExistsException.class)
 	public ResponseEntity handleUserNotFoundException(UserAlreadyExistsException ex){
-		return new ResponseEntity(message1, HttpStatus.NOT_FOUND);
+		return new ResponseEntity(message5, HttpStatus.NOT_FOUND);
 	}
 	
 	@Value(value="${data.exception.message6}")
 	private String message6;
 	@ExceptionHandler(FlightAlreadyExistsException.class)
 	public ResponseEntity handleFlightNotFoundException(FlightAlreadyExistsException ex){
-		return new ResponseEntity(message2, HttpStatus.NOT_FOUND);
+		return new ResponseEntity(message6, HttpStatus.NOT_FOUND);
 	}
 	
 	@Value(value="${data.exception.message7}")
 	private String message7;
 	@ExceptionHandler(BookingAlreadyExistsException.class)
 	public ResponseEntity handleBookingNotFoundException(BookingAlreadyExistsException ex){
-		return new ResponseEntity(message3, HttpStatus.NOT_FOUND);
+		return new ResponseEntity(message7, HttpStatus.NOT_FOUND);
 	}
 	
 	@Value(value="${data.exception.message8}")
 	private String message8;
 	@ExceptionHandler(PassengerAlreadyExistsException.class)
 	public ResponseEntity handlePassengerNotFoundException(PassengerAlreadyExistsException ex){
-		return new ResponseEntity(message4, HttpStatus.NOT_FOUND);	
+		return new ResponseEntity(message8, HttpStatus.NOT_FOUND);	
 	}
 }

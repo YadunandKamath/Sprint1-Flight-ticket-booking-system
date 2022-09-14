@@ -37,7 +37,6 @@ public class Booking {
 
 	public Booking() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	public Booking(int bookingId, int userId, int flightId,String bookingDate, /*String travelDate, */double totalCost,
